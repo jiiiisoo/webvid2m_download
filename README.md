@@ -8,6 +8,7 @@ cd webvid2m_download
 pip install -e .
 ```
 
+## Run
 
 ```bash
 video2dataset --url_list={input_url_path} \
