@@ -10,7 +10,6 @@ pip install -e .
 
 
 ```bash
-video2dataset --url_list="videos.csv" --url_col="url" --caption_col="caption" --output_folder="dataset"
 video2dataset --url_list={input_url_path} \
               --input_format="csv" \
               --output_format="webdataset" \
