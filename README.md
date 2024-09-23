@@ -12,15 +12,15 @@ pip install -e .
 
 ```bash
 video2dataset --url_list={input_url_path} \
-              --input_format="csv" \
+        --input_format="csv" \
               --output_format="webdataset" \
-	            --output_folder={output_path} \
+	      --output_folder={output_path} \
               --url_col="contentUrl" \
-              --caption_col="name" \
+        --caption_col="name" \
               --save_additional_columns='[videoid,page_idx,page_dir,duration]' \
-              --enable_wandb=True \
+        --enable_wandb=True \
 	            --config='{home_dir}/webvid2m_download/examples/webvid2m_slurm.yaml' \
-              --incremental_mode="incremental" \
+            --incremental_mode="incremental" \
               --tmp_dir={tmp_dir}
 ```
 If you go into the output folder you should see a nice small video dataset stored with all relevant metadata.
